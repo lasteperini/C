@@ -76,11 +76,8 @@ void push( Item item ) {
 
 void print_stack( void ) {
 	Node p;
-	int n = 1;
 	for (p = s -> head; p != NULL; p = p-> next) {
-		printf("--> %d ", p -> info);
-		if ( n == 30) {break;}
-		n = n+1;
+		print_item(p -> info);
 	}
 	printf("\n");
 }

@@ -3,4 +3,6 @@
 
 typedef char Item ;
 
+void print_item ( Item item );
+
 #endif
