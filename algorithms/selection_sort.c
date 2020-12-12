@@ -4,7 +4,7 @@
 
 #define N 15
 
-void selectionsort(int a[], int n);
+void selectionsort(int a[], int n, int L);
 
 int main(void) {
 	int a[N], n;
@@ -21,14 +21,13 @@ int main(void) {
 		i++;
 	}
 	int L = i;
-	selectionsort(a, L);
-	stampa(a,L);
+	selectionsort(a, L, L);
 	
 	return 0;
 
 }
 
-void selectionsort(int a[], int n) {
+void selectionsort(int a[], int n, int L) {
 	int max = a[0], tag = 0;
 
 	if (n > 1) {
@@ -39,6 +38,7 @@ void selectionsort(int a[], int n) {
 			}
 		}
 		scambia(a, tag, n-1);
-		selectionsort(a, n-1);
+		stampa(a,L);
+		selectionsort(a, n-1, L);
 	}
 }

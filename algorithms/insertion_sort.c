@@ -22,7 +22,6 @@ int main(void) {
 	}
 	int L = i;
 	insertionsort(a, L);
-	stampa(a,L);
 	
 	return 0;
 
@@ -38,5 +37,6 @@ void insertionsort(int a[], int n) {
 			j--;
 		}
 		a[j+1] = x; // inserisco x al posto giusto
+		stampa(a,n);
 	}
 }
