@@ -11,3 +11,11 @@ void stampa(int a[], int lung) {
 	printf("\n");
 
 }
+
+void scambia(int a[],int i,int j) {
+	int x;
+	x = a[i];
+	a[i] = a[j];
+	a[j] = x;
+	
+}
