@@ -19,3 +19,10 @@ void scambia(int a[],int i,int j) {
 	a[j] = x;
 	
 }
+
+int max(int x, int y) {
+	if (x > y) 
+		return x;
+	
+	return y;
+}
